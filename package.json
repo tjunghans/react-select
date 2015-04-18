@@ -1,0 +1,46 @@
+{
+  "name": "react-simple-select",
+  "description": "Component that renders dynamic html dropdown",
+  "author": "Thomas Junghans <thomas.junghans@gmail.com>",
+  "version": "0.0.0",
+  "main": "./lib/select",
+  "stylus": "./css/main.styl",
+  "scripts": {
+    "test:browser": "mochify",
+    "watch:browser": "npm run test:browser -- --watch",
+    "lint": "jslint --color \"**/*.js\"",
+    "pretest": "npm run lint",
+    "test": "npm run test:browser",
+    "start": "node integration/server.js"
+  },
+  "dependencies": {
+    "react": "^0.13"
+  },
+  "devDependencies": {
+    "jslint": "^0.8",
+    "mochify": "^2.6",
+    "react-tools": "0.13",
+    "react-integration": "^0.1"
+  },
+  "files": [
+    "css",
+    "lib",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tjunghans/react-select"
+  },
+  "bugs": {
+    "url": "https://github.com/tjunghans/react-select/issues"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "select",
+    "dropdown"
+  ],
+  "licences": {
+    "type": "MIT"
+  }
+}
