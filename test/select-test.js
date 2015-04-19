@@ -43,7 +43,7 @@ function prepareParams(params) {
   }
 
   if (!params.onChange) {
-    params.onChange = function () {};
+    params.onChange = function () { return; };
   }
 
   return params;
