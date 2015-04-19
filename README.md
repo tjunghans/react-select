@@ -3,7 +3,7 @@
 [![SemVer]](http://semver.org)
 [![License]](https://github.com/tjunghans/react-list/blob/master/LICENCE)
 
-A react component that renders an array of objects (items) using the give component (itemComponent).
+A react component that renders a select dropdown.
 
 
 ## Install
@@ -11,7 +11,7 @@ A react component that renders an array of objects (items) using the give compon
 Install as node dependency:
 
 ```
-npm install react-simple-list --save
+npm install react-simple-select --save
 ```
 
 
@@ -20,40 +20,33 @@ npm install react-simple-list --save
 ```javascript
 
 var React = require('react');
-var list = require('react-simple-list');
+var select = require('react-simple-select');
 
 var container = document.querySelector('body');
 
 var items = [
-  {id: 1, firstname: 'Mike', lastname: 'November'},
-  {id: 2, firstname: 'India', lastname: 'Juliet'},
-  {id: 3, firstname: 'Alpha', lastname: 'Bravo'},
+  {id: 1, name: 'Zürich'},
+  {id: 2, name: 'St. Gallen'},
+  {id: 3, name: 'München'},
 ];
-
-var itemComponent = React.createClass({
-  propTypes: {
-    href: React.PropTypes.string.isRequired,
-    text: React.PropTypes.string.isRequired
-  },
-  render: function () {
-    return (
-      React.DOM.a({ href: this.props.href }, this.props.text)
-    );
-  }
-});
 
 function itemFilter(item) {
 	return {
-		href: '#' + item.id,
-		text: item.firstname + ' ' + item.lastname
+		key: item.id,
+		value: item.id,
+    label: item.name
 	};
 }
 
 React.render(React.createElement(list, {
 	items: items,
 	itemFilter: itemFilter,
-	itemComponent: itemComponent,
-	cssClass: 'list'
+	value: 2,
+	className: 'locations',
+  ref: 'location',
+  onChange: function (e) {
+    console.log(e.target.value);
+  }
 }), container);
 
 ```
@@ -61,9 +54,13 @@ React.render(React.createElement(list, {
 
 ## Properties
 
-- `items`: an array of items, where items can be an arbitrary object
-- `itemFilter`: a function that is called with each item and used to map the item to the properties of itemComponent
-- `itemComponent`: a react class that is used to display an item
+- `items`: an array of items, where items can be an arbitrary object. If items
+  does not have the properties `value` and `label` then the `itemFilter` needs
+  to be set, to convert each item to a usable object.
+- `itemFilter`: a function that is called with each item and used to map the
+  item to the properties `key`, `value` and `label`.
+- `className`: an optional css class for the select element that is rendered
+- `onChange`: a function that is called when the value is changed.
 
 
 ## Preview
