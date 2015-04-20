@@ -61,7 +61,9 @@ React.render(React.createElement(list, {
   item to the properties `key`, `value` and `label`.
 - `className`: an optional css class for the select element that is rendered
 - `onChange`: a function that is called when the value is changed.
-
+- `unselected`: an object that is the option item to select for no selection.
+  The generated option will be the first dropdown item. To generate an option
+  with an empty value use: `{value: '', label: 'Please choose...'}`
 
 ## Preview
 

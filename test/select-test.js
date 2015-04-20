@@ -80,5 +80,16 @@ describe('component', function () {
     assert.equal($('select.foobarbaz', div).length, 1);
   });
 
+  it('renders first element without value', function () {
+    render({unselected: {
+      label: 'All',
+      value: ''
+    }});
+
+    assert.equal($('option', div).length, 4);
+    assert.equal($('option', div)[0].value, '');
+    assert.equal($('option', div)[0].textContent, 'All');
+  });
+
 });
 
