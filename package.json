@@ -2,7 +2,7 @@
   "name": "react-simple-select",
   "description": "Component that renders dynamic html dropdown",
   "author": "Thomas Junghans <thomas.junghans@gmail.com>",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./lib/select",
   "stylus": "./css/main.styl",
   "scripts": {
