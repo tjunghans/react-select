@@ -1,7 +1,7 @@
 # React-List
 
 [![SemVer]](http://semver.org)
-[![License]](https://github.com/tjunghans/react-list/blob/master/LICENCE)
+[![License]](https://github.com/tjunghans/react-select/blob/master/LICENCE)
 
 A react component that renders a select dropdown.
 
@@ -38,7 +38,7 @@ function itemFilter(item) {
 	};
 }
 
-React.render(React.createElement(list, {
+React.render(React.createElement(select, {
 	items: items,
 	itemFilter: itemFilter,
 	value: 2,
