@@ -1,10 +1,1 @@
-
-/* line 4 : /Users/tj/Projects/react-select/css/main.styl */
-
-/* line 1 : /Users/tj/Projects/react-select/node_modules/stylus/lib/functions/index.styl */
-
-/* line 1 : /Users/tj/Projects/react-select/css/main.styl */
-select {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
+select{font-family:Arial,sans-serif;font-size:16px}

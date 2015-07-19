@@ -5,6 +5,7 @@
 
 A react component that renders a select dropdown.
 
+[Demo](http://tangiblej.neocities.org/react-select-example.html)
 
 ## Install
 

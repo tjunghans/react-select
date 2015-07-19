@@ -26,7 +26,7 @@
     "mochify": "^2.6",
     "react": "^0.13",
     "stylus": "^0.52",
-    "uglify": "^0.1",
+    "uglify-js": "^2.4",
     "watchify": "^3.2"
   },
   "files": [
