@@ -7,21 +7,22 @@ A react component that renders a select dropdown.
 
 [Demo](http://tangiblej.neocities.org/react-select-example.html)
 
+
 ## Install
 
 Install as node dependency:
 
 ```
 npm install react-simple-select --save
-
 ```
+
 
 ## Quickstart
 
 ```
 npm start & npm run watch
-
 ```
+
 
 ## Commands
 
@@ -79,10 +80,6 @@ React.render(React.createElement(select, {
 - `unselected`: an object that is the option item to select for no selection.
   The generated option will be the first dropdown item. To generate an option
   with an empty value use: `{value: '', label: 'Please choose...'}`
-
-## Preview
-
-Run `node integration` to preview the component on http://localhost:8000
 
 
 ## License
