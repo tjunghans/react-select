@@ -4,7 +4,6 @@
   "author": "Thomas Junghans <thomas.junghans@gmail.com>",
   "version": "1.2.0",
   "main": "./lib/select",
-  "stylus": "./css/main.styl",
   "scripts": {
     "test:browser": "mochify",
     "watch:browser": "npm run test:browser -- --watch",
@@ -32,6 +31,7 @@
   "files": [
     "css",
     "lib",
+    "public",
     "README.md"
   ],
   "repository": {

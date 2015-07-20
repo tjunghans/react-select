@@ -3,8 +3,6 @@
 var React = require('react');
 var select = require('../');
 
-var container = document.querySelector('body');
-
 var items = [
   {id: 1, name: 'Bern'},
   {id: 2, name: 'Paris'},
