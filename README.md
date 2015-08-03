@@ -2,6 +2,8 @@
 
 [![SemVer]](http://semver.org)
 [![License]](https://github.com/tjunghans/react-select/blob/master/LICENCE)
+[![Build Status](https://travis-ci.org/tjunghans/react-select.svg?branch=master)](https://travis-ci.org/tjunghans/react-select)
+
 
 A react component that renders a select dropdown.
 
