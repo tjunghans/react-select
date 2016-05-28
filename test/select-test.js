@@ -1,7 +1,8 @@
 /*globals describe, it, beforeEach, afterEach */
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
+var ReactDOM = require('react-dom');
 var assert = require('assert');
 var select = require('../lib/select');
 
@@ -54,7 +55,7 @@ describe('component', function () {
   var div;
 
   function render(params) {
-    React.render(React.createElement(select,
+    ReactDOM.render(React.createElement(select,
       prepareParams(params)), div);
   }
 
@@ -64,7 +65,7 @@ describe('component', function () {
 
   afterEach(function () {
     if (div) {
-      React.unmountComponentAtNode(div);
+      ReactDOM.unmountComponentAtNode(div);
     }
   });
 

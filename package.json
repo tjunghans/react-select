@@ -19,16 +19,17 @@
     "watch": "npm run watch:js & npm run watch:css"
   },
   "dependencies": {
-    "browserify": "^10.2",
+    "react": "^15.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0",
     "ecstatic": "^0.8",
-    "react": "^0.13",
+    "jslint": "^0.8",
+    "mochify": "^2.6",
+    "react-dom": "^15.1.0",
     "stylus": "^0.52",
     "uglify-js": "^2.4",
     "watchify": "^3.2"
-  },
-  "devDependencies": {
-    "jslint": "^0.8",
-    "mochify": "^2.6"
   },
   "files": [
     "css",
