@@ -38,6 +38,7 @@ npm start & npm run watch
 ```javascript
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var select = require('react-simple-select');
 
 var container = document.querySelector('body');
@@ -56,7 +57,7 @@ function itemFilter(item) {
   };
 }
 
-React.render(React.createElement(select, {
+ReactDOM.render(React.createElement(select, {
   items: items,
   itemFilter: itemFilter,
   value: 2,
